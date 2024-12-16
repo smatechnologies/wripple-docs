@@ -1,11 +1,14 @@
 {
-  "name": "template",
+  "name": "docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --port 5002",
     "build": "docusaurus build",
+    "build-pipeline": "npm run prepare-sdk-docs && npm run copy-app-wikis && docusaurus build",
+    "copy-app-wikis": "node copy-app-wikis.mjs",
+    "prepare-sdk-docs": "node prepare-sdk-docs.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -14,17 +17,20 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^0.10.0",
-    "@docusaurus/core": "2.0.0-beta.20",
-    "@docusaurus/plugin-google-gtag": "2.0.0-beta.20",
-    "@docusaurus/preset-classic": "2.0.0-beta.20",
-    "@mdx-js/react": "^1.6.21",
-    "@svgr/webpack": "^5.5.0",
-    "clsx": "^1.1.1",
-    "file-loader": "^6.2.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-content-docs": "^3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "path-to-regexp": "^3.3.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.4.0",
+    "@docusaurus/types": "^3.4.0",
+    "fast-xml-parser": "^4.3.2"
   },
   "browserslist": {
     "production": [
@@ -33,9 +39,19 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "overrides": {
+    "@docusaurus/core": {
+      "serve-handler": {
+        "path-to-regexp": "^3.3.0"
+      }
+    }
   }
 }

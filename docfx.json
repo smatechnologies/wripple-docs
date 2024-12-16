@@ -1,0 +1,23 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Wripple.SDK/Wripple.SDK.csproj"
+          ],
+          "src": "../sdk"
+        }
+      ],
+      "dest": "docs/developers/99-api-reference",
+      "includePrivateMembers": false,
+      "disableGitFeatures": true,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened",
+      "memberLayout": "samePage",
+      "allowCompilationErrors": false,
+      "filter": "filter-config.yml"
+    }
+  ]
+}
