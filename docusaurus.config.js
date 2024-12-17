@@ -12,7 +12,7 @@ const config = {
   tagline: 'Get help on Wripple - The simplest way to automate your applications',
   favicon: 'img/favicon.ico',
   url: 'https://help.smatechnologies.com',
-  baseUrl: '/',
+  baseUrl: '/wripple/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
