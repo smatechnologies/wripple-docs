@@ -1,23 +1,52 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 const config = {
-  title: 'Wripple Docs',
-  tagline: 'Get help on Wripple - The simplest way to automate your applications',
-  favicon: 'img/favicon.ico',
+  title: 'Wripple Help',
+  tagline: 'Get Help on Wripple',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/wripple/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  favicon: 'images/favicon.ico',
+  organizationName: 'smatechnologies',
+  projectName: 'wripple-docs',
+  themeConfig: {
+    navbar: {
+      title: 'Help',
+      logo: {
+        alt: 'SMA Technologies Help Logo',
+        src: 'images/logo.svg',
+        href: 'https://help.smatechnologies.com',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'helpSidebar',
+          position: 'left',
+          label: 'Help',
+        },
+        {to: '/apps', label: 'Apps', position: 'left'},
+        {to: '/tutorials', label: 'Tutorials', position: 'left'},
+        {
+          href: 'https://smaipaaswebstaging.z21.web.core.windows.net/login',
+          label: 'App',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} SMA Technologies.`,
+    },
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+
   },
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
           path: 'docs/help',
           routeBasePath: 'help',
@@ -33,12 +62,15 @@ const config = {
 
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+        gtag: {
+          trackingID: 'G-7XYMFXX81Y',
+          anonymizeIP: false,
+        },
+      },
     ],
   ],
-
   plugins: [
     [
       '@docusaurus/plugin-content-docs',
@@ -58,85 +90,12 @@ const config = {
         sidebarPath: './sidebars.js',
       }
     ]
+//    [
+//      require.resolve('@cmfcmf/docusaurus-search-local'), 
+//      {
+//      }
+//    ],
   ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Wripple Docs',
-        logo: {
-          alt: 'Wripple',
-          src: 'images/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'helpSidebar',
-            position: 'left',
-            label: 'Help',
-          },
-          {to: '/apps', label: 'Apps', position: 'left'},
-          {to: '/tutorials', label: 'Tutorials', position: 'left'},
-          {
-            href: 'https://smaipaaswebstaging.z21.web.core.windows.net/login',
-            label: 'App',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Help',
-                to: '/help',
-              },
-              {
-                label: 'Apps',
-                to: '/apps',
-              },
-              {
-                label: 'Tutorials',
-                to: '/tutorials',
-              },
-            ],
-          },
-          {
-            title: 'For Developers',
-            items: [
-              {
-                label: 'Developer Docs',
-                to: '/developers',
-              }
-            ],
-          },
-          {
-            title: 'Other Apps from SMA',
-            items: [
-              {
-                label: 'OpCon',
-                href: 'https://smatechnologies.com/products-opcon-automation',
-              },
-              {
-                label: 'VisualCron',
-                href: 'https://www.visualcron.com',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} SMA Technologies. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-        additionalLanguages: ['csharp', 'json']
-      },
-    }),
 };
 
 export default config;
