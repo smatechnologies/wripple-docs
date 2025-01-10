@@ -1,4 +1,4 @@
-# SMA OpCon Template Repo Docs
+# SMA Wripple Documentation
 
 This repository contains the content behind the SMA Wripple documentation hosted at <https://help.smatechnologies.com/wripple>.
 
@@ -20,5 +20,5 @@ Please see <https://help.smatechnologies.com/opcon/contributor-guide> for inform
 
 ## Code of Conduct
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md)
+[![Contributor Covenant](https://imgwripple.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md)
 SMA Technologies has adopted the [Contributor Covenant](CODE_OF_CONDUCT.md) as its Code of Conduct, and we expect project participants to adhere to it. Please read the [full text](CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.

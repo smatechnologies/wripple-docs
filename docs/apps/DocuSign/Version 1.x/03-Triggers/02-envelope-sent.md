@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Envelope Sent'
+hide_title: true
+---
+
 # Envelope Sent
 
 You can use this trigger to start your workflow when an envelope is sent in DocuSign.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Create and Send Envelope'
+hide_title: true
+---
+
 # Create and Send Envelope
 
 You can use this action to create and send an envelope in DocuSign.

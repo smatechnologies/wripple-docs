@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Read From Worksheet'
+hide_title: true
+---
+
 # Read from Worksheet
 
 You can use this action to read data from a worksheet in Microsoft Excel.

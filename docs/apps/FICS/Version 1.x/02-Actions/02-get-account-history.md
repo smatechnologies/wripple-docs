@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Get Account History'
+hide_title: true
+---
+
 # Get Account History
 
 You can use this action to get the history of one or more accounts in FICS.

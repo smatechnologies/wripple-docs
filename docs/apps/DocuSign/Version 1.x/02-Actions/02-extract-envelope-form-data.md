@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Extract Envelope Form Data'
+hide_title: true
+---
+
 # Extract Envelope Form Data
 
 You can use this action to extract form data from an envelope in DocuSign.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Workflows Page'
+hide_title: true
+---
+
 # Workflows Page
 
 ## Required Privileges

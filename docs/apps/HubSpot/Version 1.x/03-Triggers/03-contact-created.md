@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Contact Created'
+hide_title: true
+---
+
 # Contact Created
 
 You can use this trigger to start your workflow when a contact is created in your HubSpot account.

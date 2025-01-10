@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Search Accounts'
+hide_title: true
+---
+
 # Search Accounts
 
 You can use this action to search for accounts in FICS.

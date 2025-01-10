@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Note'
+hide_title: true
+---
+
 # Update Note
 
 You can use this action to update a Note record in KeyStone.

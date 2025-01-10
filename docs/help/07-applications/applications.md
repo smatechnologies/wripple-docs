@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Applications Page'
+hide_title: true
+---
+
 # Applications Page
 
 This page provides an overview of the available applications and their configurations.

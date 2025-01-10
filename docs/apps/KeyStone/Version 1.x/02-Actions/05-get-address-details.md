@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Get Address Details'
+hide_title: true
+---
+
 # Get Address Details
 
 You can use this action to get the details of an address recird on KeyStone.

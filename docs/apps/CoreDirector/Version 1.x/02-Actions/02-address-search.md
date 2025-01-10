@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Address Search'
+hide_title: true
+---
+
 # Address Search
 
 You can use this action to search for addresses in CoreDirector.

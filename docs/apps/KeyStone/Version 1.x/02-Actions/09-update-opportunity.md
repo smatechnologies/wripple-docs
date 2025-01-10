@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Opportunity'
+hide_title: true
+---
+
 # Update Opportunity
 
 You can use this action to update an opportunity in KeyStone.

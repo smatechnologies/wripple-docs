@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Workflow Configuration Page'
+hide_title: true
+---
+
 # Workflow Configuration Page
 
 ## Required Privileges
@@ -55,7 +60,7 @@ All of the changes made will be auto-saved.
 
 1. After the workflow steps have all been filled out, click the 'Publish' button. See image below for an example.
 
-   ![Publish](../../resources/images/workflowConfigurations/publish.png)
+![Publish](../../resources/images/workflowConfigurations/publish.png)
 
 :::note
 

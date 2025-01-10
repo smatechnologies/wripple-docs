@@ -1,3 +1,8 @@
+---
+sidebar_label: 'SSO Configuration'
+hide_title: true
+---
+
 # Configure SSO
 
 ## Required Privileges
@@ -6,15 +11,13 @@ In order to access the Setup page and configure the **Single Sign-On** setting, 
 
 - **Role**: User must be assigned to the Admin role.
 
----
-
 ## Configuring SSO
 
 To configure SSO Settings, click on the **gear icon** located at the bottom of the navigation panel.
 
 #### SSO Configuration Fields
 
-![Server Options - SSO Settings](../../resources/images/setup/sso/sso-settings-overall.png "SSO Tab")
+![Server Options - SSO Settings](../../resources/images/setup/sso/sso-settings-overall.png)
 
 1. Click on the **Switch** to enable access to the SSO login button.
 
@@ -85,9 +88,12 @@ The following are a list of actions that will take place when a user logs in thr
 The following is an example of filling out the required fields:
 
 1. SSO Settings:
-   ![Server Options - SSO Sample](../../resources/images/setup/sso/sso-settings-overall.png "SSO Sample")
+
+![Server Options - SSO Sample](../../resources/images/setup/sso/sso-settings-overall.png)
+
 1. Group Mappings:
-   ![Server Options - SSO Group Mapping Sample](../../resources/images/setup/sso/sso-group-mappings.png "SSO Group Mapping Sample")
+
+![Server Options - SSO Group Mapping Sample](../../resources/images/setup/sso/sso-group-mappings.png "SSO Group Mapping Sample")
 
 :::
 
@@ -100,15 +106,15 @@ The following is an example of filling out the required fields:
 This document describes the steps needed to create a custom application in Okta, to return custom optional claims in the access token that will be used by the application. Ensure the user following these steps has enough privileges to create an application, assign users to that application, and create custom claims.
 
 1.  After you’ve logged in to Okta, click "Admin" in the upper right corner to go to the administration dashboard
-    ![Okta-Application](../../resources/images/setup/sso/okta-initial.png "Okta - Landing Page")
+![Okta-Application](../../resources/images/setup/sso/okta-initial.png "Okta - Landing Page")
 1.  Once on the administration dashboard, click “Applications” from the left navigation to go to Applications
-    ![Okta-Application](../../resources/images/setup/sso/okta-application-start.png "Okta - Dashboard")
+![Okta-Application](../../resources/images/setup/sso/okta-application-start.png "Okta - Dashboard")
 1.  Click the "Create App Integration" button
-    ![Okta-Application](../../resources/images/setup/sso/okta-app-integration.png "Okta - Applications")
+![Okta-Application](../../resources/images/setup/sso/okta-app-integration.png "Okta - Applications")
     1.  Inside the modal, select the following options:
         1. Sign-in method: OIDC - OpenID Connect
         1. Application type: Single-Page Application
-           ![Okta-Application](../../resources/images/setup/sso/okta-signinmethod-applicationtype.png "Okta - Integration Options")
+![Okta-Application](../../resources/images/setup/sso/okta-signinmethod-applicationtype.png "Okta - Integration Options")
     1.  Click on "Next"
     1.  Set the following options:
         1.  Grant type: Authorization Code
@@ -120,40 +126,40 @@ This document describes the steps needed to create a custom application in Okta,
         1.  Controlled access: Allow everyone in your organization access (for this example)
         1.  If an option was not listed, you may select the one that is more convenient for your organization
         1.  Set controlled access based on your organizations needs
-            ![Okta-Application](../../resources/images/setup/sso/okta-newpageapp.png "Okta- Integration Grant Type")
+![Okta-Application](../../resources/images/setup/sso/okta-newpageapp.png "Okta- Integration Grant Type")
     1.  Click on "Save".
     1.  Note down the **Client ID** value, this will be used to configure SSO in Wripple
         1.  The **Client ID** value can be found inside the "Applications" page, in case you need to find it.
 1.  After creating the application, go the newly created application and go to "Assignments"
     1. Assign the users from your organization to the new application
-       ![Okta-Application](../../resources/images/setup/sso/okta-user-assignments.png "Okta- User Assignments")
+![Okta-Application](../../resources/images/setup/sso/okta-user-assignments.png "Okta- User Assignments")
 1.  Go to the "Security" section in the main menu and select "API"
     1. In the "Authorization Server" tab select the "default" server
        1. Note down the Issuer URI for the “default” row, this value will be the **Authority** which will be used in the configuration screen for SSO
     1. Inside the "default" authorization server select the "Claims" tab
-       ![Okta-Application](../../resources/images/setup/sso/okta-default-server.png "Okta - Claims Tab")
+![Okta-Application](../../resources/images/setup/sso/okta-default-server.png "Okta - Claims Tab")
     1. Click on "Add Claim"
        1. The following is an example on how to add a custom claim
-          ![Okta-Application](../../resources/images/setup/sso/okta-group-claim.png "Okta - Add Group Claim")
+![Okta-Application](../../resources/images/setup/sso/okta-group-claim.png "Okta - Add Group Claim")
        1. Make sure the token type is Access Token and that you enter **`.*`** for the regex logic
        1. Make sure to name claims “**groups**”
        1. Repeat the process to add an “**wrippleid**” claim
           1. Make sure to add **appuser.email** in the **Value** text field
-             ![Okta-Application](../../resources/images/setup/sso/okta_ipaasid_claim.png "Okta - Add Email Claim")
+![Okta-Application](../../resources/images/setup/sso/okta_ipaasid_claim.png "Okta - Add Email Claim")
     1. Click on the “Settings” tab and take notes of the following values:
        1. Issuer, this will be used as the **Authority** value in the SSO configuration tab
-          ![Okta-Application](../../resources/images/setup/sso/okta-server-settings.png "Okta - Default Server Settings")
+![Okta-Application](../../resources/images/setup/sso/okta-server-settings.png "Okta - Default Server Settings")
     1. Go to the "Token Preview" tab
        1. Type the name your newly created application
        1. Select **Authorization Code** for the "Grant Type"
        1. Select a user that has access to this application
        1. Type "**openid**" in the "Scopes" textbox. These scopes are required for SSO implementation in Wripple
        1. Click on "Preview Token" then click on the "token" tab to view the access token. Make sure the **“groups”** and **“wrippleid”** claims are displayed
-          ![Okta-Application](../../resources/images/setup/sso/okta-token-preview.png "Okta - Token Preview")
+![Okta-Application](../../resources/images/setup/sso/okta-token-preview.png "Okta - Token Preview")
 1.  Then click on the "Access Policies" tab
-    ![Okta-Application](../../resources/images/setup/sso/okta-access-policies.png "Okta - Access Policies")
+![Okta-Application](../../resources/images/setup/sso/okta-access-policies.png "Okta - Access Policies")
     1.  Click on "Edit" in the "Default Policy Rule" row. Make sure that the "Authorization Code" option is selected, the rest are optional:
-        ![Okta-Application](../../resources/images/setup/sso/okta-edit-rule.png "Okta - View Access Policies")
+![Okta-Application](../../resources/images/setup/sso/okta-edit-rule.png "Okta - View Access Policies")
 
 :::note
 
@@ -177,37 +183,37 @@ This document describes the steps needed to create a custom application in Azure
          1. For example, `https://<yourhostname>:8080/login/callback`
       1. The **Redirect URI** value is already known to Wripple but make sure to updated on here.
          1. Make sure to include **/login/callback** as part of the URI.
-            ![Azure- Register Application](../../resources/images/setup/sso/azure-register-application.png "Azure - Register Application")
+![Azure- Register Application](../../resources/images/setup/sso/azure-register-application.png "Azure - Register Application")
    1. Register Application
 1. Select the newly created application
    1. From the “Home” menu go to Azure Active Directory => App registrations => Select your new application
 1. Go to "Authentication" on the side menu
    1. Ensure there is a redirect value in the single-page application area. For example, `https://<yourhostname>:8080/login/callback`
-      ![Azure-Application](../../resources/images/setup/sso/azure-platform-configuration.png "Azure - Platform Configuration")
+![Azure-Application](../../resources/images/setup/sso/azure-platform-configuration.png "Azure - Platform Configuration")
 1. Go to “Overview” in the left navigation menu
    1. Note down the following information, you will need it later:
    1. The application (client) ID will be used as the **Client ID** in the SSO configuration tab inside Wripple
    1. Click on “Endpoints” and note down the OpenID Connect value
    1. Copy this value and paste it on a browser and find the issuer value inside the JSON
       1. It is highly recommended that you copy this text from the browser and paste it into an application that can format the JSON value
-         ![Azure-Application](../../resources/images/setup/sso/azure-formatted-json.png "Azure - Formatted JSON")
+![Azure-Application](../../resources/images/setup/sso/azure-formatted-json.png "Azure - Formatted JSON")
       1. Note down the Issuer URI, this value will be used in the **Authority** field in the SSO configuration tab inside Wripple
 1. Go to “API permissions” which is found on the left navigation menu
    1. Select Add a permission
    1. Click on “Add a permission” and select Microsoft Graph
-      ![Azure-Application](../../resources/images/setup/sso/azure-graphapi.png "Azure - Add Permission")
+![Azure-Application](../../resources/images/setup/sso/azure-graphapi.png "Azure - Add Permission")
    1. Select “Delegated permissions” and type **groupmember** in the search textbox. Select the **GroupMember.Read.All** permission:
-      ![Azure-Application](../../resources/images/setup/sso/azure-groupmember-permission.png "Azure - GroupMember Permission")
+![Azure-Application](../../resources/images/setup/sso/azure-groupmember-permission.png "Azure - GroupMember Permission")
    1. Next type **user.read** in the search textbox and select **User.Read** permission
    1. Click on “Add permissions” to save and then click on “Grant admin consent”
-      ![Azure-Application](../../resources/images/setup/sso/azure-all-permissions.png "Azure - Required Permissions")
+![Azure-Application](../../resources/images/setup/sso/azure-all-permissions.png "Azure - Required Permissions")
 1. Go to “Manifest” on the left navigation menu
    1. Search for “**accessTokenAcceptedVersion**” and set the value to **2**
-      ![Azure-Application](../../resources/images/setup/sso/azure-access-token.png "Azure - Manifest Access Token Version")
+![Azure-Application](../../resources/images/setup/sso/azure-access-token.png "Azure - Manifest Access Token Version")
 1. Restrict access to the application (optional).
    1. Go to Azure Active Directory -> Enterprise Applications > All applications and select the application you want to configure
    1. Select Properties and set "Yes" in the Assignment Required field and save the changes
-      ![Azure-Application](../../resources/images/setup/sso/azure-restrict-access.png "Azure - Restrict Access to Application")
+![Azure-Application](../../resources/images/setup/sso/azure-restrict-access.png "Azure - Restrict Access to Application")
    1. Make sure to assign users and groups which need to grant access to the application. Go to Under Manage, select the Users and groups > Add user/group
    1. Select the users or groups you want to allow and assign them access to your application. Confirm that the users and groups you added are showing up in the updated Users and groups list
    1. Now only those users/groups are allowed to access to the application
@@ -235,5 +241,3 @@ Common errors when connection to your identity provider (IdP) OpenID Connection 
 By addressing these common errors related to redirect URI, authority, and client ID, you can enhance the connectivity and authentication experience with your OIDC application.
 
 :::
-
----

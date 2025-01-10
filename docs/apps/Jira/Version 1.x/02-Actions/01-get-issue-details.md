@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Get Issue Details'
+hide_title: true
+---
+
 # Get Issue Details
 
 You can use this action to get the details of a Jira issue.

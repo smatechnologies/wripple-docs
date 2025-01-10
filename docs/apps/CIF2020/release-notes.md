@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Release Notes'
+hide_tite: true
+---
+
 # Release Notes
 
 ## Version 1.0.0 (05/27/2024)

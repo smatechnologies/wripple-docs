@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Contact'
+hide_title: true
+---
+
 # Update a Contact
 
 You can use this action to update a contact in your HubSpot account.

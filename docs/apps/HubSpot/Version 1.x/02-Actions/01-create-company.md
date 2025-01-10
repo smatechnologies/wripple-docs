@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Create Company'
+hide_title: true
+---
+
 # Create a Company
 
 You can use this action to create a company in your HubSpot account.

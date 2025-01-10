@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Override Requested'
+hide_title: true
+---
+
 # Override Requested
 
 You can use this trigger to start your workflow when a security override is requested on KeyStone.

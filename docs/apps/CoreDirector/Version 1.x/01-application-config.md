@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Application Configuration'
+hide_title: true
+---
+
 # App Configuration
 
 To be able to use CoreDirector with Wripple you will need the following:

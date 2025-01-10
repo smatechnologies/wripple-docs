@@ -1,3 +1,8 @@
+---
+sidebar_label: 'App Configuration'
+hide_tite: true
+---
+
 # App Configuration
 
 To be able to use CIF 20/20 with Wripple you will need the following:

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Address Changed'
+hide_title: true
+---
+
 # Address Changed
 
 You can use this trigger to start your workflow when an address changes on KeyStone.

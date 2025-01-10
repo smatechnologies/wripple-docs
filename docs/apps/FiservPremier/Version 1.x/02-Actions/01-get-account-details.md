@@ -1,3 +1,9 @@
+---
+sidebar_label: 'Get Account Details'
+hide_title: true
+---
+
+
 # Get Account Details
 
 You can use this action to get account details on Fiserv Premier.

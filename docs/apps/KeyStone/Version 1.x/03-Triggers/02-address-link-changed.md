@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Address Link Changed'
+hide_title: true
+---
+
 # Address Link Changed
 
 You can use this trigger to start your workflow when the address on a Person Address Link changes in KeyStone.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Personal Customers'
+hide_title: true
+---
+
 # Search Personal Customers
 
 You can use this action to search for personal customers in Fusion Fabric.

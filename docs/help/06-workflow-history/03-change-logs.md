@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Change Logs'
+hide_title: true
+---
+
 # Change Logs
 ## Change Log Table
 

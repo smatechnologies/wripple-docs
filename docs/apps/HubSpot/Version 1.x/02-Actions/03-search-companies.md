@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Search Companies'
+hide_title: true
+---
+
 # Search Companies
 
 You can use this action to search for companies in your HubSpot account.

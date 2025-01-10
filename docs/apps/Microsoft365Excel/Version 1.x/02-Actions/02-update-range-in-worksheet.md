@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Range in Worksheet'
+hide_title: true
+---
+
 # Update Range in Worksheet
 
 You can use this action to update data in a Microsoft Excel worksheet.

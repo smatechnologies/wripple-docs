@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Customer Search'
+hide_tite: true
+---
+
 # Customer Search
 
 You can use this action to search for customers in CIF 20/20.

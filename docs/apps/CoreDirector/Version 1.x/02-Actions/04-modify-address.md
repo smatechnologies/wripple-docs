@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Modify Address'
+hide_title: true
+---
+
 # Modify Address
 
 You can use this action to modify an address record in CoreDirector.

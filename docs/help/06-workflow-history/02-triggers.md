@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Trigger History'
+hide_title: true
+---
+
 # Trigger History
 
 The Triggers tab of the Workflow History screen allows you to review evaluation history for all of your workflow triggers.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Create Contact'
+hide_title: true
+---
+
 # Create a Contact
 
 You can use this action to create a contact in your HubSpot account.

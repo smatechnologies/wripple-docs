@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Add New Address'
+hide_title: true
+---
+
 # Add New Address
 
 You can use this action to add new address to a person on KeyStone.

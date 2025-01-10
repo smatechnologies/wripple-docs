@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Send Email'
+hide_title: true
+---
+
 # Send Email
 
 You can use this action to send an email in your email provider.

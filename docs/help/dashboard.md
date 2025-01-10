@@ -1,8 +1,13 @@
+---
+sidebar_label: 'Dashboard Overview'
+hide_title: true
+---
+
 # Overview
 
 The Dashboard is where you can see an overview of your Wripple instance at a glance. You can see an example dashboard below:
 
-![Dashboard](../../resources/images/dashboard/dashboard.png "Dashboard")
+![Dashboard](../../docs/resources/images/dashboard/dashboard.png)
 
 ## Navigation Sidebar
 
@@ -12,13 +17,13 @@ Beneath this button you can find the navigation menu which you can use to get ar
 In order, you will see:
 
 1. Dashboard (You Are Here)
-2. [Workflows](../05-workflows/workflows.md) - view, add, and configure your automation workflows
-3. [Workflow History](../06-workflow-history/01-execution.md) - view details of past workflow executions and changes
+2. [Workflows](05-workflows/workflows.md) - view, add, and configure your automation workflows
+3. [Workflow History](06-workflow-history/01-execution.md) - view details of past workflow executions and changes
 4. Applications - view details for all of the applications which Wripple enables you to automate
-5. [App Configurations](../04-app-configurations/01-intro.md) - view, add, and configure your connections to supported applications
+5. [App Configurations](04-app-configurations/01-intro.md) - view, add, and configure your connections to supported applications
 
 At the bottom of the navigation sidebar, you will also see a "person" button for your "My Account" view and a "cog" button which will navigate to your User Management screen.
-For more information on User Management, see the [SSO Configuration](../07-setup/sso-configuration.md) documentation.
+For more information on User Management, see the [SSO Configuration](07-setup/sso-configuration.md) documentation.
 :::info
 
 You require advanced permissions to see and configure user management in Wripple. If you do not have these permissions, you will not see this menu option.
@@ -29,7 +34,7 @@ You require advanced permissions to see and configure user management in Wripple
 
 The "My Account" menu is where you can quickly access frequently-used account actions. An example of this view is shown below:
 
-![Account Settings](../../resources/images/dashboard/dashboard-my-account.png "Account Settings")
+![Account Settings](../../docs/resources/images/dashboard/dashboard-my-account.png)
 
 In this menu, you can see:
 
@@ -48,7 +53,7 @@ The Dashboard is populated with a number of "widgets" which provide at-a-glance 
 
 The Workflow History widget shows an overview of the health of your published workflows. An example can be seen below:
 
-![Workflow History](../../resources/images/dashboard/dashboard-workflow-history.png "Workflow History")
+![Workflow History](../../docs/resources/images/dashboard/dashboard-workflow-history.png)
 
 This card displays:
 
@@ -60,7 +65,7 @@ This card displays:
 
 The App Configurations widget shows an overview of the health of your App Configurations. An example can be seen below:
 
-![App Configurations](../../resources/images/dashboard/dashboard-app-configs.png "App Configurations")
+![App Configurations](../../docs/resources/images/dashboard/dashboard-app-configs.png)
 
 This card displays:
 
@@ -73,14 +78,14 @@ This card displays:
 
 The Latest Apps widget shows a selection of the newest apps that Wripple supports. An example view can be seen below:
 
-![Latest Apps](../../resources/images/dashboard/dashboard-new-apps.png "Latest Apps")
+![Latest Apps](../../docs/resources/images/dashboard/dashboard-new-apps.png)
 
-Go to the [App Configurations](../04-app-configurations/01-intro.md) screen to configure these apps for use in your workflows!
+Go to the [App Configurations](04-app-configurations/01-intro.md) screen to configure these apps for use in your workflows!
 
 ### Workflow Change Log
 
 The Workflow Change Log widget shows the most recent workflow changes which have been made by users in your organization. An example view can be seen below:
 
-![Workflow Change Log](../../resources/images/dashboard/dashboard-changelog.png "Workflow Change Log")
+![Workflow Change Log](../../docs/resources/images/dashboard/dashboard-changelog.png)
 
-You can go to the [Workflow History](../06-workflow-history/01-execution.md) screen to see more details on these changes.
+You can go to the [Workflow History](06-workflow-history/01-execution.md) screen to see more details on these changes.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Company Updated'
+hide_title: true
+---
+
 # Company Updated
 
 You can use this trigger to start your workflow when a company is updated in your HubSpot account.

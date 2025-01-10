@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Add New Note'
+hide_title: true
+---
+
 # Add New Note
 
 You can use this action to add new note in KeyStone.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Wripple Relay'
+hide_title: true
+---
+
 # Wripple Relay
 
 Wripple Relay serves as a secure solution for connecting on-premise applications to Wripple, when direct access via open ports or IP whitelisting is not feasible. Below are the key details about Wripple Relay:

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Configuring an App'
+hide_title: true
+---
+
 # Configuring an App
 ## Required Privileges
 In order to create an App Configuration, you must have one of the following roles:

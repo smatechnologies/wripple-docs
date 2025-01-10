@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Address'
+hide_title: true
+---
+
 # Update Address
 
 You can use this action to update existing address on KeyStone.

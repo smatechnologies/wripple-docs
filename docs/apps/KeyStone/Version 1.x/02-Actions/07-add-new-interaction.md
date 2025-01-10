@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Add New Interaction'
+hide_title: true
+---
+
 # Add New Interaction
 
 You can use this action to add new interaction/opportunity in KeyStone.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Note Changed'
+hide_title: true
+---
+
 # Note Changed
 
 You can use this trigger to start your workflow when a note is added or updated in KeyStone.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Overview'
+hide_title: true
+---
+
 # Overview
 ## Required Privileges
 In order to access the App Configurations page, you must have one of the following roles:

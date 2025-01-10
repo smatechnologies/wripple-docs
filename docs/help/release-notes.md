@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_label: 'Release Notes'
+hide_title: true
 ---
+
 
 # Release Notes
 

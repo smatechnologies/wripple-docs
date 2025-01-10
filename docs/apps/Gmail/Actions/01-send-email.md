@@ -1,4 +1,9 @@
-﻿# Send Email
+﻿---
+sidebar_label: 'Send Email'
+hide_title: true
+---
+
+# Send Email
 
 Sends an email using the configured Gmail account.
 

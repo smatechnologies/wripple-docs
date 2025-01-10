@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Add Account'
+hide_title: true
+---
+
 # Add Account
 
 You can use this action to add an account on Fiserv Premier.

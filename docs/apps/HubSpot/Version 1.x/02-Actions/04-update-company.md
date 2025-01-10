@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Company'
+hide_title: true
+---
+
 # Update a Company
 
 You can use this action to update a company in your HubSpot account.

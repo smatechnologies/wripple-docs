@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Email Received'
+hide_title: true
+---
+
 # Email Received
 
 You can use this trigger to start your workflow when an email is received in your email provider.

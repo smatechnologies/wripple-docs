@@ -1,3 +1,8 @@
+---
+sidebar_label: 'My Account Overview'
+hide_title: true
+---
+
 # My Account Overview
 
 This document provides details for managing account settings and configurations.

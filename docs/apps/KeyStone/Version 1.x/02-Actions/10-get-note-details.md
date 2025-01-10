@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Get Note Details'
+hide_title: true
+---
+
 # Get Note Details
 
 You can use this action to get the details of a Note record in KeyStone.

@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Envelope Completed'
+hide_title: true
+---
+
 # Envelope Completed
 
 You can use this trigger to start your workflow when an envelope is completed in DocuSign.

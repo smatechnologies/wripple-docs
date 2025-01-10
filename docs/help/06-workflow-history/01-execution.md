@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Execution History'
+hide_title: true
+---
+
 # Execution History
 ## Execution History Table
 

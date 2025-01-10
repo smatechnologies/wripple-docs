@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Find Single Account'
+hide_title: true
+---
+
 # Find Single Account
 
 You can use this action to find a single account on KeyStone.

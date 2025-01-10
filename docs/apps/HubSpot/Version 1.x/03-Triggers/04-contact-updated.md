@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Contact Updated'
+hide_title: true
+---
+
 # Contact Updated
 
 You can use this trigger to start your workflow when a contact is updated in your HubSpot account.

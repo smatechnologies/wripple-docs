@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Customer Search'
+hide_title: true
+---
+
 # Customer Search
 
 You can use this action to search for customers in CoreDirector.

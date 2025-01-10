@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Interaction'
+hide_title: true
+---
+
 # Update Interaction
 
 You can use this action to update an interaction in KeyStone.

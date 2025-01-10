@@ -1,3 +1,8 @@
+---
+sidebar_label: 'Update Personal Customers'
+hide_title: true
+---
+
 # Update Personal Customers
 
 You can use this action to update for personal customers in Fusion Fabric.
